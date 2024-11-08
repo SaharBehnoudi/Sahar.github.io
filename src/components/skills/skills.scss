@@ -1,0 +1,80 @@
+.skills{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .text {
+    position: absolute;
+    top: 20px; /* Adjust this value to control how close it is to the top of the page */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the title horizontally */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #3b0e37;
+    font-family: system-ui;
+  }
+  .arrow{
+    height: 70px;
+    position: absolute;
+    cursor: pointer;
+    &.right{
+      right: 100px;
+      transform: rotateY(180deg);
+    }
+    &.left{
+      left: 100px;
+    }
+  }
+  .slider{
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease;
+    .container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .item{
+      width: 300px;
+      height: 100%;
+      
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .top{
+        flex: 3;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .topContainer img{
+          width: 200px;
+          height: 200px;
+          border-radius: 30px;
+          object-fit: contain;
+        }
+      }
+      .bottom{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+        .bottomContainer h2{
+          font-family: 'Franklin Gothic Medium';
+          font-size: 50px;
+
+        }
+      }
+    }
+    }
+  }
+ 
+}

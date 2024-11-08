@@ -1,0 +1,75 @@
+.intro {
+  background-color: white;
+  display: flex;
+  .a {
+    flex: 0.5;
+    overflow: hidden;
+    position: relative;
+    .wrapper{
+      width: 100%;
+      height: 100%;
+      padding-left: 150px;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1{
+        font-size: 60px;
+        margin: 15px 0;
+        color: palevioletred;
+        font-family: system-ui;
+      }
+      h2{
+        font-size: 35px;
+      }
+      h3{
+        font-size: 30px;
+
+        span{
+          color: purple;
+        }
+        .ityped-cursor {
+          animation: blink 1s infinite;
+        }
+        @keyframes blink {
+          50%{
+            opacity: 1;
+          }
+          100%{
+            opacity: 0;
+          }
+          
+        }
+      }
+    }
+    a{
+      position: absolute;
+      bottom: 10px;
+      left: 80%;
+      img{
+        width: 30px;
+        animation: arrowBlink 2s infinite;
+      }
+      @keyframes arrowBlink {
+        100%{
+          opacity: 0;
+        }
+        
+      }
+    }
+  }
+  .b {
+    flex: 0.5;
+    overflow: hidden;
+    
+    .imageContainer {
+      width: 700px;
+      height: 700px;
+      float: right;
+
+      img {
+        height: 90%;
+      }
+    }
+  }
+}
